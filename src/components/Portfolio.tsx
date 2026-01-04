@@ -23,10 +23,10 @@ const Portfolio = () => {
     },
     {
       id: '2',
-      title: 'LOCAL DOMINATION SYSTEM',
-      description: 'Google Maps optimization with cinematic walkthroughs. 300% increase in local visibility.',
+      title: 'DYNAMIC ASSET GENERATION',
+      description: 'Real-time video synthesis with Higgsfield AI. 500+ variations deployed in production.',
       videoUrl: '/videos/portfolio2.mp4',
-      tags: ['LOCAL SEO', 'CINEMATIC', 'OPTIMIZATION']
+      tags: ['REAL-TIME', 'AI SYNTHESIS', 'PRODUCTION']
     }
   ];
 
