@@ -20,6 +20,13 @@ const Portfolio = () => {
       description: 'High-volume asset generation using Kling AI models. 1000+ unique creatives deployed.',
       videoUrl: '/videos/watch-portfolio1.mp4',
       tags: ['AI VIDEO', 'AUTOMATION', 'SCALABLE']
+    },
+    {
+      id: '2',
+      title: 'LOCAL DOMINATION SYSTEM',
+      description: 'Google Maps optimization with cinematic walkthroughs. 300% increase in local visibility.',
+      videoUrl: '/videos/portfolio2.mp4',
+      tags: ['LOCAL SEO', 'CINEMATIC', 'OPTIMIZATION']
     }
   ];
 
