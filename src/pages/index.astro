@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Navigation } from '../components/Navigation';
 import { Hero } from '../components/Hero';
 import { BentoGrid } from '../components/BentoGrid';
+import Portfolio from '../components/Portfolio';
 import { TechMarquee } from '../components/TechMarquee';
 import { Footer } from '../components/Footer';
 ---
@@ -12,6 +13,7 @@ import { Footer } from '../components/Footer';
   <main>
     <Hero client:load />
     <BentoGrid client:load />
+    <Portfolio client:load />
     <TechMarquee client:load />
   </main>
   <Footer client:load />
