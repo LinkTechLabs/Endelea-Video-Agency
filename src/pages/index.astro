@@ -1,16 +1,18 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import { Navigation } from '../components/Navigation';
+import { Hero } from '../components/Hero';
+import { BentoGrid } from '../components/BentoGrid';
+import { TechMarquee } from '../components/TechMarquee';
+import { Footer } from '../components/Footer';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Endelea - AI Solutions for the Modern Frontier">
+  <Navigation client:load />
+  <main>
+    <Hero client:load />
+    <BentoGrid client:load />
+    <TechMarquee client:load />
+  </main>
+  <Footer client:load />
+</Layout>
