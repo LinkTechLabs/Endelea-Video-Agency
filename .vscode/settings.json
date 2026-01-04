@@ -1,0 +1,11 @@
+{
+  "git.ignoreLimitWarning": true,
+  "git.untrackedChanges": "hidden",
+  "git.showInlineOpenFileAction": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.postCommitCommand": "none",
+  "git.showProgress": true,
+  "git.suggestSmartCommit": false
+}
