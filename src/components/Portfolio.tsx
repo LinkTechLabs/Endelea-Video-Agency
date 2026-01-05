@@ -27,6 +27,13 @@ const Portfolio = () => {
       description: 'Real-time video synthesis with Higgsfield AI. 500+ variations deployed in production.',
       videoUrl: '/videos/portfolio2.mp4',
       tags: ['REAL-TIME', 'AI SYNTHESIS', 'PRODUCTION']
+    },
+    {
+      id: '3',
+      title: 'NEURAL RETENTION SYSTEM',
+      description: 'Sentinel AI-powered visual optimization. 400% increase in viewer engagement metrics.',
+      videoUrl: '/videos/portfolio3.mp4',
+      tags: ['NEURAL AI', 'OPTIMIZATION', 'ANALYTICS']
     }
   ];
 
