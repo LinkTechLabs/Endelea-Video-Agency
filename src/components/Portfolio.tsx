@@ -38,13 +38,13 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-slate-900/20">
+    <section className="py-24 px-6 bg-bg-light-gray">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="font-heading text-3xl md:text-4xl font-bold text-slate-200 text-center mb-16"
+          className="font-heading text-3xl md:text-4xl font-bold text-text-primary text-center mb-16"
         >
           DEPLOYED SYSTEMS
         </motion.h2>
@@ -59,9 +59,9 @@ const Portfolio = () => {
               className="group cursor-pointer"
               onClick={() => setSelectedVideo(item.videoUrl)}
             >
-              <div className="glass glass-hover p-6 rounded-xl h-full">
+              <div className="bg-bg-light border border-border-light p-6 rounded-xl h-full hover:shadow-lg transition-shadow duration-200">
                 {/* Video Thumbnail */}
-                <div className="relative aspect-video bg-slate-800 rounded-lg overflow-hidden mb-4">
+                <div className="relative aspect-video bg-bg-light-gray rounded-lg overflow-hidden mb-4">
                   <video
                     className="w-full h-full object-cover"
                     muted
@@ -73,15 +73,15 @@ const Portfolio = () => {
                     <source src={item.videoUrl} type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50">
-                    <Play className="w-12 h-12 text-brand-green" />
+                    <Play className="w-12 h-12 text-accent" />
                   </div>
                 </div>
                 
                 {/* Content */}
-                <h3 className="font-heading text-xl font-semibold text-slate-200 mb-2">
+                <h3 className="font-heading text-xl font-semibold text-text-primary mb-2">
                   {item.title}
                 </h3>
-                <p className="text-slate-400 text-sm mb-4 font-sans">
+                <p className="text-text-secondary text-sm mb-4 font-sans">
                   {item.description}
                 </p>
                 
@@ -90,7 +90,7 @@ const Portfolio = () => {
                   {item.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="px-2 py-1 bg-brand-green/10 border border-brand-green/20 rounded text-xs font-mono text-brand-green"
+                      className="px-2 py-1 bg-accent/10 border border-accent/20 rounded text-xs font-mono text-accent"
                     >
                       {tag}
                     </span>
@@ -120,7 +120,7 @@ const Portfolio = () => {
           >
             <button
               onClick={() => setSelectedVideo(null)}
-              className="absolute -top-10 right-0 text-slate-400 hover:text-white transition-colors"
+              className="absolute -top-10 right-0 text-text-secondary hover:text-text-primary transition-colors"
             >
               ✕ CLOSE
             </button>

@@ -14,39 +14,38 @@ export const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-heading text-5xl md:text-7xl font-bold text-slate-200 leading-tight mb-6"
+          className="font-heading text-6xl md:text-8xl font-bold text-text-primary leading-tight mb-8"
         >
-          AUTOMATED GROWTH
+          Your secret weapon
           <br />
-          <span className="neon-glow">INFRASTRUCTURE</span>
+          for standing out
+          <br />
+          and selling more.
         </motion.h1>
         
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed font-sans"
+          className="text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto leading-relaxed font-sans mb-12"
         >
-          Static is dead. We engineer high-retention visual assets optimized for algorithmic capture.
+          Conversion-driven websites and impactful branding that cut through the noise.
         </motion.p>
         
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-10"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full text-sm text-slate-400">
-            <div className="w-2 h-2 bg-brand-green rounded-full animate-pulse"></div>
-            SYSTEMS OPERATIONAL
-          </div>
+          <a href="/audit" className="px-8 py-4 bg-accent text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200 inline-block">
+            Get Started
+          </a>
+          <a href="#work" className="px-8 py-4 bg-transparent text-text-primary font-medium rounded-lg border-2 border-text-primary hover:bg-text-primary hover:text-white transition-colors duration-200 inline-block">
+            View Our Work
+          </a>
         </motion.div>
       </motion.div>
-      
-      {/* Background Glow Effect */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-brand-green/10 via-transparent to-transparent blur-3xl"></div>
-      </div>
     </section>
   );
 };

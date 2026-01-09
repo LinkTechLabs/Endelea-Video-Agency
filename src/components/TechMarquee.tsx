@@ -9,13 +9,13 @@ export const TechMarquee = () => {
   ];
 
   return (
-    <section className="py-16 overflow-hidden bg-slate-900/20">
+    <section className="py-16 overflow-hidden bg-bg-light-gray">
       <div className="relative">
         <div className="flex animate-marquee">
           {[...tech, ...tech].map((item, index) => (
             <span 
               key={index}
-              className="font-mono text-sm text-slate-600 whitespace-nowrap select-none mx-8"
+              className="font-mono text-sm text-text-secondary whitespace-nowrap select-none mx-8"
             >
               {item}
             </span>
